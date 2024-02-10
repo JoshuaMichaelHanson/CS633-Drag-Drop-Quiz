@@ -12,32 +12,32 @@
         <div class="question">Drag and drop the correct options to their matching drop zones.</div>
         <div class="container-box">
             <div class="options-container">
-                <div id="optionVeracode" class="option" draggable="true">Veracode</div>
-                <div id="optionClearCase" class="option" draggable="true">Clear Case</div>
-                <div id="optionCollaborator" class="option" draggable="true">Collaborator Smart Bear</div>
-                <div id="optionRender" class="option" draggable="true">Render</div>
-                <div id="optionDocumentum" class="option" draggable="true">Documentum</div>
-                <div id="optionBard" class="option" draggable="true">Bard</div>
-                <div id="optionJira" class="option" draggable="true">Jira</div>
-                <div id="optionBugzilla" class="option" draggable="true">Bugzilla</div>
-                <div id="optionHP" class="option" draggable="true">HP Quality Center</div>
-                <div id="optionRally" class="option" draggable="true">Rally</div>
-                <div id="optionVersionOne" class="option" draggable="true">VersionOne</div>
-                <div id="optionGitHub" class="option" draggable="true">GitHub</div>
-                <div id="optionMockito" class="option" draggable="true">Mockito</div>
-                <div id="optionCollabnet" class="option" draggable="true">Collabnet Teamforge</div>
-                <div id="optionZephyr" class="option" draggable="true">Zephyr</div>
-                <div id="optionWebEX" class="option" draggable="true">WebEX</div>
-                <div id="optionSonarQube" class="option" draggable="true">SonarQube</div>
-                <div id="optionLinode" class="option" draggable="true">Linode</div>
-                <div id="optionCrucible" class="option" draggable="true">Crucible</div>
-                <div id="optionZoom" class="option" draggable="true">Zoom</div>
-                <div id="optionChatGPT" class="option" draggable="true">ChatGPT</div>
-                <div id="optiongMock" class="option" draggable="true">gMock</div>
-                <div id="optionAccuRev" class="option" draggable="true">AccuRev</div>
+                <div id="optionVeracode" class="option" draggable="true" ondragstart="drag(event)">Veracode</div>
+                <div id="optionClearCase" class="option" draggable="true" ondragstart="drag(event)">Clear Case</div>
+                <div id="optionCollaborator" class="option" draggable="true" ondragstart="drag(event)">Collaborator Smart Bear</div>
+                <div id="optionRender" class="option" draggable="true" ondragstart="drag(event)">Render</div>
+                <div id="optionDocumentum" class="option" draggable="true" ondragstart="drag(event)">Documentum</div>
+                <div id="optionBard" class="option" draggable="true" ondragstart="drag(event)">Bard</div>
+                <div id="optionJira" class="option" draggable="true" ondragstart="drag(event)">Jira</div>
+                <div id="optionBugzilla" class="option" draggable="true" ondragstart="drag(event)">Bugzilla</div>
+                <div id="optionHP" class="option" draggable="true" ondragstart="drag(event)">HP Quality Center</div>
+                <div id="optionRally" class="option" draggable="true" ondragstart="drag(event)">Rally</div>
+                <div id="optionVersionOne" class="option" draggable="true" ondragstart="drag(event)">VersionOne</div>
+                <div id="optionGitHub" class="option" draggable="true" ondragstart="drag(event)">GitHub</div>
+                <div id="optionMockito" class="option" draggable="true" ondragstart="drag(event)">Mockito</div>
+                <div id="optionCollabnet" class="option" draggable="true" ondragstart="drag(event)">Collabnet Teamforge</div>
+                <div id="optionZephyr" class="option" draggable="true" ondragstart="drag(event)">Zephyr</div>
+                <div id="optionWebEX" class="option" draggable="true" ondragstart="drag(event)">WebEX</div>
+                <div id="optionSonarQube" class="option" draggable="true" ondragstart="drag(event)">SonarQube</div>
+                <div id="optionLinode" class="option" draggable="true" ondragstart="drag(event)">Linode</div>
+                <div id="optionCrucible" class="option" draggable="true" ondragstart="drag(event)">Crucible</div>
+                <div id="optionZoom" class="option" draggable="true" ondragstart="drag(event)">Zoom</div>
+                <div id="optionChatGPT" class="option" draggable="true" ondragstart="drag(event)">ChatGPT</div>
+                <div id="optiongMock" class="option" draggable="true" ondragstart="drag(event)">gMock</div>
+                <div id="optionAccuRev" class="option" draggable="true" ondragstart="drag(event)">AccuRev</div>
             </div>
             <div class="drop-box">
-                <div class="drop-zone" id="dropZone"></div>
+                <div class="drop-zone" id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
 
             <button id="submitBtn">Submit</button>
@@ -46,7 +46,8 @@
             </a>
         </div>
     </div>
-    <script src="java.js"></script>
+    <!-- script src="java.js"></script -->
+    <script src="josh.js"></script>
 
 </body>
 
